@@ -12,3 +12,6 @@ logs/
 
 
 .env
+
+mongo/
+postgres/

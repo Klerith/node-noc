@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsnd --respawn src/app.ts",
+    "dev": "tsnd --respawn --clear src/app.ts",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js"
   },
@@ -14,14 +14,17 @@
   "devDependencies": {
     "@types/node": "^20.5.7",
     "@types/nodemailer": "^6.4.9",
+    "prisma": "^5.2.0",
     "rimraf": "^5.0.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@prisma/client": "^5.2.0",
     "cron": "^2.4.3",
     "dotenv": "^16.3.1",
     "env-var": "^7.4.0",
+    "mongoose": "^7.4.5",
     "nodemailer": "^6.9.4"
   }
 }
